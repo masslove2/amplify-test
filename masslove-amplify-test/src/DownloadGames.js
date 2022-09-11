@@ -9,8 +9,6 @@ class DownloadGames extends React.Component {
     constructor() {
         super()
 
-
-
         this.state = {
             "chesscomUsername" : "masslove",
             "dateBeg" : "2022-09-01",
@@ -41,9 +39,9 @@ class DownloadGames extends React.Component {
     handleFormSubmit(event) {
         event.preventDefault()
 
-        const formData = new FormData(event.currentTarget)
-        formData.forEach((value, property) => this.state[property] = value);
-        console.log(JSON.stringify(this.state))
+        //const formData = new FormData(event.currentTarget)
+        //formData.forEach((value, property) => this.state[property] = value);
+        //console.log(JSON.stringify(this.state))
 
     }
 
